@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:regular,600,700,800&display=swap");
+@font-face {
+	font-family: "Bebas Neue";
+	src: url("../fonts/BebasNeueBold.woff2") format("woff2"), url("../fonts/BebasNeueBold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* ________________Обнуление_________________ */
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+img {
+	vertical-align: top;
+}
+body {
+	line-height: 1;
+	font-family: "Open Sans";
+}
+/* ___________блок header___________________________ */
+.wraper {
+	padding-top: 100px;
+}
+.container {
+	width: 1180px;
+	margin: 0px auto;
+	border: 1px solid red;
+	background-color: grey;
+	padding: 20px;
+}
+.car__top {
+	margin: 0px auto;
+	width: 450px;
+	height: 120px;
+	background-color: rgb(36, 119, 187);
+	border-top-left-radius: 500px;
+	border-top-right-radius: 500px;
+	position: relative;
+	overflow: hidden;
+}
+.car__window {
+	width: 80px;
+	height: 113px;
+	border-top-left-radius: 100%;
+	border-top-right-radius: 0%;
+	background-color: blue;
+	position: absolute;
+	z-index: 1;
+	top: 7px;
+	left: 0px;
+}
+.window-treygolnik{
+	border-left:60px solid transparent; 
+border-right:0px solid transparent; 
+border-bottom: 300px solid rgb(36, 119, 187);
+
+position: absolute;
+top: 0px;
+left: 20px;
+z-index: 1;
+}
+.car__window-left {
+	width: 150px;
+	height: 105px;
+	background-color: blue;
+	border-top: 10px solid;
+	border-left: 10px solid;
+	border-top-left-radius: 40%;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	position: absolute;
+	top: 12px;
+	left: 110px;
+}
+.car__window-right {
+	width: 100px;
+	height: 105px;
+	background-color: blue;
+	border-top: 10px solid;
+	border-right: 10px solid;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 100%;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	position: absolute;
+	top: 12px;
+	left: 310px;
+}
+.car__bottom {
+	padding-bottom: 10px;
+	margin: 0px 0px 0px 190px;
+	width: 700px;
+	height: 150px;
+	background-color: rgb(36, 119, 187);
+	border-top-left-radius: 750px;
+	border-top-right-radius: 500px;
+	position: relative;
+}
+.car__hend-left{
+	width: 40px;
+	height: 20px;
+	background-color: #000;
+	border-radius: 5px;
+	position: absolute;
+	top: 13px;
+	left: 370px;
+
+}
+.car__hend-left-bg{
+	width: 30px;
+	height: 10px;
+	background-color: red;
+	border-radius: 0px 3px;
+	position: absolute;
+	top: 10px;
+	left: 0px;
+}
+.car__hend-right{
+	width: 40px;
+	height: 20px;
+	background-color: #000;
+	border-radius: 5px;
+	position: absolute;
+	top: 13px;
+	left: 470px;
+
+}
+.car__hend-right-bg{
+	width: 30px;
+	height: 10px;
+	background-color: red;
+	border-radius: 0px 3px;
+	position: absolute;
+	top: 10px;
+	left: 0px;
+}
+.car__bottom-triygolnik {
+	display: inline-block;
+	border-left: 0px solid transparent;
+	border-right: 70px solid transparent;
+	border-bottom: 85px solid rgb(36, 119, 187);
+	position: absolute;
+	top: -70px;
+	right: 53px;
+}
+.car__arki {
+	width: 170px;
+	height: 300px;
+	background-color: blue;
+	border-top-left-radius: 50%;
+	border-top-right-radius: 50%;
+	position: absolute;
+	top: 50px;
+	left: 100px;
+	
+}
+.car__coleso-left {
+	width: 100px;
+	height: 100px;
+	background-color: blueviolet;
+	border-radius: 50%;
+	border: 20px solid black;
+	position: absolute;
+	top: 40px;
+	left: 35px;
+	z-index: 5;
+}
+.car__arki-right {
+	width: 170px;
+	height: 300px;
+	background-color: blue;
+	border-top-left-radius: 50%;
+	border-top-right-radius: 50%;
+	position: absolute;
+	top: 50px;
+	left: 500px;
+	
+}
+
+.car__coleso-right {
+	width: 100px;
+	height: 100px;
+	background-color: blueviolet;
+	border-radius: 50%;
+	border: 20px solid black;
+	position: absolute;
+	top: 40px;
+	left: 35px;
+	z-index: 5;
+}
+.car__bottom-podkladka {
+	width: 100%;
+	height: 300px;
+	background-color: grey;
+	margin-top: 10px;
+	position: relative;
+	z-index: 3;
+}
+.car__bamper-left {
+	width: 150px;
+	height: 30px;
+	background-color: tomato;
+	border-radius: 30px;
+	position: absolute;
+	bottom: 0;
+	left: -5px;
+}
+.protivotyman{
+	width: 20px;
+	height: 35px;
+	background-color: red;
+	border-radius: 50%;
+	position: absolute;
+	top: 0px;
+	left: 70px;
+	z-index: 1;
+}
+.protivotyman__bg{
+	width: 20px;
+	height: 35px;
+	background-color: black;
+	border-radius: 50%;
+	position: absolute;
+	top: 0px;
+	left: 75px;
+	
+}
+.protivotyman__bg-nogka{
+	width: 8px;
+	height: 25px;
+	background-color: black;
+	border-radius: 50%;
+	position: absolute;
+	top: 20px;
+	left: 15px;
+}
+.car__fara {
+	width: 35px;
+	height: 50px;
+	background-color: red;
+	border-radius: 50%;
+	position: absolute;
+	top: 68px;
+	left: 20px;
+	z-index: 1;
+}
+.car__fara-bg {
+	width: 40px;
+	height: 48px;
+	background: #000;
+	border-top-right-radius: 40%;
+	border-bottom-right-radius: 80%;
+	position: absolute;
+	top: 68px;
+	left: 35px;
+}
+.fara__zad{
+width: 20px;
+height: 30px;
+background-color: red;
+border-bottom-right-radius: 8px;
+border-bottom-left-radius: 8px;
+position: absolute;
+top: 125px;
+right: -18px;
+
+}
+.fara__zad-treygolnik{
+border-left:0px solid transparent; 
+border-right:20px solid transparent; 
+border-bottom: 20px solid red;
+position: absolute;
+top: -20px;
+}
+.bg-first{
+	width: 255px;
+	height: 13px;
+	background: blue;
+	position: absolute;
+	bottom: 0;
+	left: 255px;
+}
+.bg-two{
+	width: 255px;
+	height: 15px;
+	background: violet;
+	position: absolute;
+	bottom: 13px;
+	left: 255px;
+}
+.bg__vertical{
+	width: 12px;
+	height: 220px;
+	border-top-right-radius: 8px;
+border-top-left-radius: 8px;
+	background: violet;
+	position: absolute;
+	bottom: 13px;
+	left: 433px;
+
+}
+/* .bg__kryg{
+	width: 150px;
+	height: 70px;
+	border-radius: 50%;
+	background: blue;
+	position: absolute;
+	bottom: -2px;
+	left: 492px;
+} */
+/* .bg__kryg2{
+	width: 40px;
+	height: 60px;
+	border-radius: 50%;
+	background: rgb(36, 119, 187);
+	position: absolute;
+	bottom: 28px;
+	left: 440px;
+} */
