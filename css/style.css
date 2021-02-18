@@ -50,7 +50,7 @@ body {
 }
 /* ___________блок header___________________________ */
 .wraper {
-	padding-top: 100px;
+	padding-top: 00px;
 }
 .container {
 	width: 1180px;
@@ -62,7 +62,7 @@ body {
 .car__top {
 	margin: 0px auto;
 	width: 450px;
-	height: 120px;
+	height: 115px;
 	background-color: rgb(61, 156, 214);
 	border-top-left-radius: 500px;
 	border-bottom-left-radius: 0%;
@@ -84,17 +84,7 @@ body {
 	height: 113px;
 	border-top-left-radius: 100%;
 	border-top-right-radius: 0%;
-	background: radial-gradient(
-		ellipse at center,
-		#e1ffff 0%,
-		#e1ffff 7%,
-		#e1ffff 12%,
-		#fdffff 16%,
-		#e6f8fd 30%,
-		#c8eefb 54%,
-		#bee4f8 75%,
-		#b1d8f5 100%
-	);
+	background: linear-gradient(45deg, rgba(226,226,226,1) 0%,rgba(209,209,209,1) 58%,rgba(254,254,254,1) 100%); 
 	position: absolute;
 	z-index: 1;
 	top: 7px;
@@ -113,7 +103,7 @@ body {
 }
 .car__window-left {
 	width: 150px;
-	height: 105px;
+	height: 100px;
 	background: rgb(7, 129, 178);
 	border-top: 10px solid rgb(44, 41, 132);
 	border-left: 10px solid rgb(44, 41, 132);
@@ -138,14 +128,15 @@ body {
 	top: 0px;
 	left: 0px;
 }
+
 .car__window-right {
 	width: 100px;
-	height: 105px;
+	height: 100px;
 	background: rgb(7, 129, 178);
 	border-top: 10px solid rgb(44, 41, 132);
 	border-right: 10px solid rgb(44, 41, 132);
 	border-left: 2px solid rgb(44, 41, 132);
-	border-right: 2px solid rgb(44, 41, 132);
+	border-bottom: 2px solid rgb(44, 41, 132);
 	border-top-left-radius: 10px;
 	border-top-right-radius: 100%;
 	border-bottom-left-radius: 20px;
@@ -155,7 +146,7 @@ body {
 	left: 310px;
 }
 .window__bg2 {
-	width: 93px;
+	width: 85px;
 	height: 85px;
 	background-color: rgb(5, 82, 102);
 	border-top-left-radius: 0px;
@@ -174,7 +165,7 @@ body {
 	background-color: rgb(61, 156, 214);
 	border-top-left-radius: 500px;
 	border-top-right-radius: 425px;
-	border-bottom-left-radius: 50%;
+	border-bottom-left-radius: 70%;
 	border-bottom-right-radius: 50px;
 	position: relative;
 }
@@ -186,6 +177,18 @@ body {
 	position: absolute;
 	top: 13px;
 	left: 350px;
+}
+.hand__doted{
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	font-size: 5px;
+	text-align: center;
+	color: black;
+	background: rgb(140, 181, 209);
+	position: absolute;
+	top: 2px;
+	right: 3px;
 }
 .car__hend-left-bg {
 	width: 30px;
@@ -220,8 +223,8 @@ body {
 	border-right: 90px solid transparent;
 	border-bottom: 115px solid rgb(61, 156, 214);
 	position: absolute;
-	top: -89px;
-	right: 44px;
+	top: -83px;
+	right: 41px;
 }
 .car__arki {
 	width: 170px;
@@ -232,8 +235,9 @@ body {
 	position: absolute;
 	top: 50px;
 	left: 100px;
-	border: 15px solid #2f2cf7;
+	border: 15px solid rgb(140, 181, 209);
 }
+
 .car__coleso-left {
 	width: 110px;
 	height: 110px;
@@ -254,7 +258,7 @@ body {
 	position: absolute;
 	top: 50px;
 	left: 500px;
-	border: 15px solid #2f2cf7;
+	border: 15px solid rgb(140, 181, 209);
 }
 
 .car__coleso-right {
@@ -277,7 +281,7 @@ background-color: black;
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	margin-left: -35px;
+	margin-left: -36px;
 	margin-top: -35px;
 }
 
@@ -334,10 +338,18 @@ left: 3px;
 	width: 150px;
 	height: 30px;
 	background-color: rgb(140, 181, 209);
-	border-radius: 30px;
+	border-bottom-left-radius: 50px;
 	position: absolute;
 	bottom: 0;
-	left: -5px;
+	left: -0px;
+}
+.bamper__pravka{
+	border-top: 20px solid transparent;
+	border-bottom: 0px solid transparent;
+	border-left: 30px solid rgb(140, 181, 209);
+	position: absolute;
+	top: -15px;
+	left: 0.5px;
 }
 .protivotyman {
 	width: 20px;
@@ -407,6 +419,7 @@ left: 3px;
 	top: 68px;
 	left: 35px;
 }
+
 .fara__zad {
 	width: 20px;
 	height: 50px;
@@ -459,6 +472,41 @@ left: 3px;
 	bottom: 28px;
 	left: 492px;
 }
+.pravka__spoler{
+	width: 55px;
+	height: 20px;
+	border-top-right-radius: 100%;
+	border-top-left-radius: 100%;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	position: absolute;
+	background: rgba(0, 0, 0, 0.849);
+	top: -20px;
+	right: 8px;
+	z-index: 2;
+} 
+.spoler__nogka{
+	border-right: 0px solid transparent;
+	border-left: 20px solid transparent;
+	border-bottom: 30px solid rgb(140, 181, 209);
+	position: absolute;
+	top: 20px;
+	left: -5px;
+	/* width: 7px;
+	height: 20px;
+	background-color: rgb(61, 156, 214);
+	/* background: rgb(140, 181, 209); 
+	position: absolute;
+	top: 20px;
+	left: 25px; */
+}
+.spoler__nogka2{
+	border-right: 20px solid transparent;
+	border-left: 0px solid transparent;
+	border-top: 30px solid rgb(140, 181, 209);
+	position: absolute;
+	top: 20px;
+	left: 15px;}
 /* .bg__kryg2{
 	width: 40px;
 	height: 60px;
